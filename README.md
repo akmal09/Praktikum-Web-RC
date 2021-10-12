@@ -15,6 +15,6 @@ jangan lupa tambahkan hasil screenshoot web di dalam file
 
 ### Tambahkan identitas dasar di sini: 
 
-Nama  :
+Nama  :Akmal Fauzan Suranta
 <br>
-NIM   :
+NIM   : 119140203
