@@ -11,6 +11,8 @@ Kumpulkan tugas kalian _bisa_ dengan cara:
 :bangbang:
 jangan lupa tambahkan hasil screenshoot web di dalam file
 
+Izin mohon maaf bang, saya lupa dalam pengumpulan screen shot dan penamaan di read me nya. Oleh sebab itu saat ini saya kumpulkan yaa bang.
+Sekali lagi saya mohon maaf bang.
 <hr>
 
 ### Tambahkan identitas dasar di sini: 
