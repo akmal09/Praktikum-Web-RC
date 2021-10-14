@@ -1,0 +1,77 @@
+.head{
+    font-size: 20px;
+    border: 20px ;
+    display: flex;
+}
+
+.atas{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: maroon;
+
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: red;
+}
+
+
+.body{
+    border: maroon outset 2px;
+    display: flex;
+}
+
+.main{
+    width: 70%;
+}
+
+.side{
+    width: 30%;            
+}
+
+.bp{
+    float: left;
+}
+
+footer{
+    display: flex;
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    height: 50%;
+}
+
+.closing{
+    margin: auto;
+    font-size: smaller;
+    padding: 16px;
+}
+
+.info-intro{
+    font-size: 20px;
+}
+
+.berita{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.b1,.b2,.b3,.b4,.b5{
+    border: black outset 2px;
+    height: auto;
+    border-radius: 25px;
+    font-size: auto;
+}
