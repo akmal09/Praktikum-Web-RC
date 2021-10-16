@@ -8,7 +8,6 @@
 </head>
 <body>
     <label for="">select theme : </label> 
-    <!-- <input type="select"> -->
     <select onclick="ubahWarna(value)">
         <option value="hitam">Hitam</option>
         <option value="putih">putih</option>
@@ -22,15 +21,18 @@
         <option value="rainy">rainy</option>
     </select>
 
+    
     <div id="q">
 
     </div>
-
+    
+    <br>
     <label for="rek">input number : </label>
     <input type="text" id="inp">
-    <button type="submit" onclick="rek()">submit</button>
+    <button type="submit" onclick="faktorial()">Get Factorial</button>
 
-    <div id="hasilrek">
+    
+    <div id="hasilFaktorial">
 
     </div>
 
@@ -41,12 +43,14 @@
 
             if (value == 'putih') {
                 backgroundSet[0].style.backgroundColor = "white";
-            
+                backgroundSet[0].style.color = "black";
             } else if (value == 'biru') {
                 backgroundSet[0].style.backgroundColor = "blue";
+                backgroundSet[0].style.color = "white";
             
             } else if (value == 'hitam') {
                 backgroundSet[0].style.backgroundColor = "black";
+                backgroundSet[0].style.color = "white";
             }
                 	
         }
@@ -55,23 +59,23 @@
             var quote = document.getElementById("q");
 
             if(val=="sunny"){
-                quote.innerHTML = "TESing sunnny";
+                quote.innerHTML = "</br>it is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cfaktorialm";
             }else if(val=="rainy"){
-                quote.innerHTML = "TESing rainy";
+                quote.innerHTML = "</br>Rain is falling outside, rake a rain coat and a brolly, and don't stay out for too long";
             }
                
         }
 
-        function rek(){
+        function faktorial(){
             var input = document.getElementById('inp');
-            hasil = document.getElementById("hasilrek")
+            hasil = document.getElementById("hasilFaktorial")
 
             var temp = input.value
             for(var i=input.value-1; i>0; i--){
                 temp = temp*i
             }
 
-            hasil.innerHTML = "the factorial of " + input.value + " is " + temp;
+            hasil.innerHTML = "</br>The factorial of " + input.value + " is " + temp;
         }
         
     </script>
