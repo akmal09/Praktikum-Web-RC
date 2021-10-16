@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Praktikum Minggu 3</title>
 </head>
 <body>
-    
+    <label for="">select theme : </label> 
+    <!-- <input type="select"> -->
+    <select onclick="ubahWarna(value)">
+        <option value="hitam">Hitam</option>
+        <option value="putih">putih</option>
+        <option value="biru">biru</option>
+    </select>
+
+    <h1>This is mw Website</h1>
+    <label for="">select the weather the type of you : </label>
+    <select name="weather" onclick="weather(value)">
+        <option value="sunny">sunny</option>
+        <option value="rainy">rainy</option>
+    </select>
+
+    <div id="q">
+
+    </div>
+
+    <label for="rek">input number : </label>
+    <input type="text" id="inp">
+    <button type="submit" onclick="rek()">submit</button>
+
+    <div id="hasilrek">
+
+    </div>
+
+
+    <script>
+        function ubahWarna(value){
+            var backgroundSet = document.getElementsByTagName('body');
+
+            if (value == 'putih') {
+                backgroundSet[0].style.backgroundColor = "white";
+            
+            } else if (value == 'biru') {
+                backgroundSet[0].style.backgroundColor = "blue";
+            
+            } else if (value == 'hitam') {
+                backgroundSet[0].style.backgroundColor = "black";
+            }
+                	
+        }
+
+        function weather(val){
+            var quote = document.getElementById("q");
+
+            if(val=="sunny"){
+                quote.innerHTML = "TESing sunnny";
+            }else if(val=="rainy"){
+                quote.innerHTML = "TESing rainy";
+            }
+               
+        }
+
+        function rek(){
+            var input = document.getElementById('inp');
+            var temp = input
+            for(var i=input-1; i>0; i--){
+                temp = temp*i
+            }
+            hasil = document.getElementsById("hasilrek");
+            hasil.innerHTML = "the factorial of " + input + " is " + temp;
+            // alert('tes')
+        }
+        
+    </script>
 </body>
 </html>
