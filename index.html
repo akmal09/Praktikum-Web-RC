@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        $(document).ready(function(){
+            tampiData()
+
+            function tampiData(){
+                $.ajax({
+                    url:'crud/tampil.php',
+                    type : 'GET',
+                    success : function(data){
+                        $('#tampil_data').html(data);
+                    }
+                })
+            }
+            
+            $('#tambahData').click(function(){
+               var data = $('#form_mahasiswa').serialize();
+               $.ajax({
+                   type : 'POST',
+                   url : "crud/tambah.php",
+                   data : data,
+                //    cache : false,
+                   success : function(data){
+                   tampiData() 
+                    //    document.getElementById('#form_mahasiswa').reset();
+                   }
+               });
+            });
+
+            $('#tampil_data').on('click','#editButton',function(){
+                var id = $(this).attr("value");
+                $.ajax({
+                    type :'GET',
+                    url : 'formEditData.php',
+                    data :{id:id},
+                    success : function(data){
+                        // alert(data);
+                        $('#tampil_data').html(data);
+                    }
+                });
+            });
+
+            $('#tampil_data').on('submit','#form_mahasiswa_edit',function(){
+                var dataForm = $(this).serialize();
+                $.ajax({
+                    type :'POST',
+                    url : 'crud/store.php',
+                    data :dataForm,
+                    cache : false,
+                    success : function(data){
+                        $('#tampil_data').html(data);
+                    }
+                });
+            });
+
+            $('#tampil_data').on('click','#batalFile',function(){
+                $.ajax({
+                    type : 'GET',
+                    url : 'crud/tampil.php',
+                    success : function(data){
+                        $('#tampil_data').html(data);
+                    }
+                });
+            });
+
+            $('#tampil_data').on('click','#deleteButton',function(){
+                var hapusId = $(this).attr("value");
+                $.ajax({
+                    type : 'POST',
+                    url : 'crud/delete.php',
+                    data : {hapusId:hapusId},
+                    success : function(data){
+                        tampiData();
+                    }
+                });
+            });
+        });
+
+            
+   </script>
+    <title>TUGAS PRAKTIKUM</title>
+</head>
+
+<body>
+    <div id="margin">
+        <form id="form_mahasiswa" method="post">
+            <label class="tulisan">NIM </label>
+            <input type="number" name="nim"><br>
+    
+            <label class="tulisan">Nama</label>
+            <input type="text" name="nama"><br>
+    
+            <label class="tulisan">Prodi</label>
+            <select name="prodi">
+                <option value="informatika">Teknik informatika</option>
+                <option value="Elektro">Teknik Elektro</option>
+                <option value="Sipil">Teknik Sipil</option>
+                <option value="Geofisika">Teknik Geofisika</option>
+                <option value="Matematika">Matematika</option>
+            </select>        
+        </form>
+        <br>
+        <button id="tambahData"><b>Simpan</b></button>
+    </div>
+
+    <br>
+    <div id="tampil_data">
+
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+#margin{
+    border: 5px outset black;
+    width: 25%;
+    background-color: azure;
+}
+
+#tambahData{
+    background-color: #4CAF50;
+    
+}
+
+table{
+    border-collapse: collapse;
+    
+}
+
+th{
+    background-color: brown;
+    color: white;
+    padding: 8px;
+}
+
+td{
+    padding: 8px;
+}
+
+
