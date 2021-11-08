@@ -1,5 +1,5 @@
 <?php 
-    // Functoin passing by reference
+    // Function passing by reference
     function susun(&$listNama){
         sort($listNama);
     }
