@@ -1,0 +1,17 @@
+form{
+    background-color: rgba(0, 255, 255, 0.685);
+    border: black outset 5px;
+    margin: auto;
+    width: 30%;
+    height: 25%;
+    
+}
+
+#hasil{
+    margin: auto;
+    /* border: black outset 5px; */
+    width: 30%;
+    height: 25%;
+    background-color: rgb(113, 241, 113);
+
+}
