@@ -104,7 +104,7 @@
             output.style.border = "black outset 5px";
             output.style.background = "rgb(113, 241, 113)";
             // output.innerHTML = "tes";
-            output.innerHTML = "Mangga : "+jmlMangga+"buah ->"+jmlMangga*hargaMangga +"<br>"+"Jambu : "+jmlJambu+"buah ->"+jmlJambu*hargaJambu+"<br>"+"Salak : "+jmlSalak+"buah ->"+ jmlSalak*hargaSalak+"<br>"+"<br><br><b>Total Belanja = </b>" + "<b>"+total+"</b>";
+            output.innerHTML = "Mangga : "+jmlMangga+" buah ->"+jmlMangga*hargaMangga +"<br>"+"Jambu : "+jmlJambu+" buah ->"+jmlJambu*hargaJambu+"<br>"+"Salak : "+jmlSalak+" buah ->"+ jmlSalak*hargaSalak+"<br>"+"<br><br><b>Total Belanja = </b>" + "<b>"+total+"</b>";
         }
         
          
