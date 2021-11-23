@@ -1,0 +1,53 @@
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: brown;
+  }
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(253, 215, 168);
+  width: 25%;
+}
+li {
+  float: left;
+} 
+li a:hover {
+  background-color: white;
+}
+
+table,td,th {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th{
+    background-color: rgb(8, 180, 211);
+}
+
+td{
+    background-color: azure;
+}
+
+td,th{
+    padding: 5px;
+}
+  
+#margin{
+    margin: auto;
+    width: 25%;
+}
+
+#inputdata{
+    background-color: rgb(119, 233, 179);
+    border: outset 2px rgb(11, 165, 80);
+}
+
+body{
+    background-color: rgb(163, 232, 236);
+}
