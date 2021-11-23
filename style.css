@@ -51,3 +51,8 @@ td,th{
 body{
     background-color: rgb(163, 232, 236);
 }
+
+#formeditdata{
+    background-color: rgb(119, 233, 179);
+    border: outset 2px rgb(11, 165, 80);
+}
