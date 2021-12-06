@@ -1,9 +1,9 @@
 # Praktikum-Web-RC
-Penjelasan folder : 
-view : untuk front end dari program
-app : untuk backend program
+Penjelasan folder : <br>
+view : untuk front end dari program <br>
+app : untuk backend program <br>
 assets : css,js, dan beberapa gambar
-
+<br> <br>
 Prosedur pembukaan : buka file (LANDING PAGE) nya dengan awalan view/index.php
 ### Tambahkan identitas dasar di sini: 
 
