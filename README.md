@@ -1,18 +1,10 @@
 # Praktikum-Web-RC
-Kumpulkan tugas kalian _bisa_ dengan cara: 
-1. fork repository ini 
-2. clone hasil fork repository
-3. Buat branch baru dengan nama sesuai minggu pertemuan, contoh:
-    > minggu8
- 
- (kerjakan-selesai) 
-1. hasil tugas kalian push ke github
+Penjelasan folder : 
+view : untuk front end dari program
+app : untuk backend program
+assets : css,js, dan beberapa gambar
 
-:bangbang:
-jangan lupa tambahkan hasil screenshoot web di dalam file
-
-<hr>
-
+Prosedur pembukaan : buka file (LANDING PAGE) nya dengan awalan view/index.php
 ### Tambahkan identitas dasar di sini: 
 
 Nama  :Akmal Fauzan Suranta

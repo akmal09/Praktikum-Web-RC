@@ -29,6 +29,9 @@ $posts = $conn->query("SELECT * FROM post")->fetch_all(MYSQLI_ASSOC);
 </head>
 
 <body>
+    <form action="../app/controller/logout.php">
+        <input type="submit" value="logout">
+    </form>
     <section class="base">
         <main>
             <?php foreach ($posts as $item) { ?>
