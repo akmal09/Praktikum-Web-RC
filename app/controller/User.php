@@ -1,5 +1,5 @@
 <?php
-require_once('db/Koneksi.php');
+require_once('../db/Koneksi.php');
 
 class User
 {
@@ -21,9 +21,9 @@ class User
             $_SESSION['userID'] = $user['id'];
             $_SESSION['userID'] = $user['nama'];
             // $user = $auth->fetch_assoc();
-            header("Location: home.php");
+            header("Location: ../../view/home.php");
         } else {
-            header("Location: index.php");
+            header("Location: ../../view/index.php");
         }
     }
 }

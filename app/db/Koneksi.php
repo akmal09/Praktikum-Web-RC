@@ -17,7 +17,7 @@ class Koneksi
             // echo "Gagal terkoneksi ke database : (" . $mysqli->connect_error . ")";
 
             //?prod
-            header('Location: 500.php');
+            header('Location: ../controller/500.php');
         }
 
 
